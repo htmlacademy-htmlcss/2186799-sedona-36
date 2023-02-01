@@ -3,21 +3,22 @@
 
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="styles/styles.css">
   <title>HTML Academy: Седона</title>
 </head>
 
 <body>
   <header class="main-header">
-    <a href="index.html" class="navigation-link">
+    <a class="navigation-link" href="index.html">
       <img src="images/logo.svg" width="140" height="70" alt="Логотип.">
     </a>
     <nav class="main-navigation">
       <ul class="navigation-list">
         <li class="navigation-item">
-          <a href="index.html" class="navigation-link">Главная</a>
+          <a class="navigation-link" href="index.html">Главная</a>
         </li>
         <li class="navigation-item">
-          <a href="#" class="navigation-link">О Седоне</a>
+          <a class="navigation-link" href="#">О Седоне</a>
         </li>
         <li class="navigation-item">
           <a class="navigation-link navigation-link-current">Гостиницы</a>
@@ -25,12 +26,12 @@
       </ul>
       <ul class="navigation-list navigation-user">
         <li class="navigation-item">
-          <a href="#" class="navigation-link">
+          <a class="navigation-link" href="#">
             <span class="visually-hidden">Поиск.</span>
           </a>
         </li>
         <li class="navigation-item">
-          <a href="#" class="navigation-link">
+          <a class="navigation-link" href="#">
             <span class="visually-hidden">Избранное.</span>
             <span>12</span>
           </a>
@@ -107,14 +108,18 @@
           </ul>
         </fieldset>
         <!--Поле с ценой в скринкасте советовали не трогать, так как подробное объяснение для таких элементов будет позже-->
-        <button class="button" type="submit">Применить</button>
-        <button class="button" type="reset">Сбросить</button>
+        <button class="button-check" type="submit">Применить</button>
+        <button class="button-reset" type="reset">Сбросить</button>
       </form>
     </section>
     <section class="catalog-hotels">
-      <h2 class="search-title">Найдено гостиниц: 38</h2>
+     <h2 class="visually-hidden">Поиск гостиниц в Седоне</h2>
+     <p class="search-paragraph">Найдено гостиниц:
+      <span>38</span>
+    </p>
       <select class="select-control" aria-label="Сортировка">
         <option value="cheap">Сначала дешевые</option>
+        <option value="expensive">Сначала дорогие</option>
       </select>
       <ul class="card-visual-list">
         <li class="card-visual-item">
@@ -142,7 +147,7 @@
           <span class="hotel">Гостиница</span>
           <b class="hotel-price">От 4000 ₽</b>
           <a class="button hotel-description-button" href="#">Подробнее</a>
-          <button type="button" class="button-favorites">В избранное</button>
+          <button class="button-favorites" type="button">В избранное</button>
           <p class="stars stars-4">
             <span class="visually-hidden">4 звезды</span>
           </p>
@@ -156,7 +161,7 @@
           <span class="hotel">Гостиница</span>
           <b class="hotel-price">От 5000 ₽</b>
           <a class="button hotel-description-button" href="#">Подробнее</a>
-          <button type="button" class="button-favorites-checked">В избранном</button>
+          <button class="button-favorites-checked" type="button">В избранном</button>
           <p class="stars stars-4">
             <span class="visually-hidden">4 звезды</span>
           </p>
@@ -170,7 +175,7 @@
           <span class="hotel">Гостиница</span>
           <b class="hotel-price">От 2500 ₽</b>
           <a class="button hotel-description-button" href="#">Подробнее</a>
-          <button type="button" class="button-favorites">В избранное</button>
+          <button class="button-favorites" type="button">В избранное</button>
           <p class="stars stars-3">2
             <span class="visually-hidden">3 звезды</span>
           </p>
@@ -184,7 +189,7 @@
           <span class="hotel">Гостиница</span>
           <b class="hotel-price">От 1500 ₽</b>
           <a class="button hotel-description-button" href="#">Подробнее</a>
-          <button type="button" class="button-favorites">В избранное</button>
+          <button class="button-favorites" type="button">В избранное</button>
           <p class="stars stars-2">
             <span class="visually-hidden">2 звезды</span>
           </p>
@@ -205,19 +210,24 @@
           <a class="pagination-link" href="#">4</a>
         </li>
         <li class="pagination-item">
-          <span class="ellipsis">...</span>
+          <a class="pagination-link" href="#">
+            ...
+          </a>
+          <span class="visually-hidden">Следующая страница</span>
         </li>
         <li class="pagination-item">
           <a class="pagination-link" href="#">10</a>
         </li>
       </ol>
     </section>
-    <section class="mailing">
-      <h2 class="mailing-title">Подпишитесь на рассылку</h2>
-      <p class="mailing-paragraph">Только полезная информация и никакого спама, честное бойскаутское!</p>
-      <form class="mailing-form" action="https://echo.htmlacademy.ru/" method="post">
-        <input type="text" id="user-mail" name="user-mail" placeholder="Ваш e-mail">
-        <label for="user-mail">Подписаться</label>
+    <section class="newsletter">
+      <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
+      <p class="newsletter-paragraph">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+        <input class="field" type="email" id="newsletter-mail" name="newsletter-mail" placeholder="Ваш e-mail" required>
+        <label for="newsletter-mail">
+        <button class="newsletter-button" type="submit">Подписаться</button>
+        </label>
       </form>
     </section>
   </main>

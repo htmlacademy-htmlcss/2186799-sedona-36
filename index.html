@@ -3,12 +3,13 @@
 
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="styles/styles.css">
   <title>HTML Academy: Седона</title>
 </head>
 
 <body>
   <header class="main-header">
-    <a href="#" class="navigation-link">
+    <a class="navigation-link" href="#">
       <img src="images/logo.svg" width="140" height="70" alt="Логотип.">
     </a>
     <nav class="main-navigation">
@@ -17,26 +18,26 @@
           <a class="navigation-link navigation-link-current">Главная</a>
         </li>
         <li class="navigation-item">
-          <a href="#" class="navigation-link">О Седоне</a>
+          <a class="navigation-link" href="#">О Седоне</a>
         </li>
         <li class="navigation-item">
-          <a href="catalog.html" class="navigation-link">Гостиницы</a>
+          <a class="navigation-link" href="catalog.html">Гостиницы</a>
         </li>
       </ul>
       <ul class="navigation-list navigation-user">
         <li class="navigation-item">
-          <a href="#" class="navigation-link">
+          <a class="navigation-link" href="#">
             <span class="visually-hidden">Поиск.</span>
           </a>
         </li>
         <li class="navigation-item">
-          <a href="#" class="navigation-link">
+          <a class="navigation-link" href="#">
             <span class="visually-hidden">Избранное.</span>
             <span>12</span>
           </a>
         </li>
         <li class="navigation-item">
-          <button type="button" name="order-button">Хочу сюда!</button>
+          <a class="navigation-link" href="catalog.html">Хочу сюда!</a>
         </li>
       </ul>
     </nav>
@@ -91,18 +92,21 @@
           <p>Не только китайского, но и настоящего местного производства!</p>
         </li>
       </ul>
+    </section>
+    <section class="offers">
       <h2 class="offer-title">Заинтересовались?</h2>
       <p class="offer-paragraph">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
         Седоне.</p>
-      <a class="button button-hotels-catalog" href="catalog.html">ПОИСК
-        ГОСТИНИЦЫ В Cедоне.</a>
+      <a class="button button-hotels-catalog" href="catalog.html">Поиск гостиницы в Cедоне.</a>
     </section>
     <section class="newsletter">
       <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
       <p class="newsletter-paragraph">Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-        <input class="field" type="email" id="newsletter-mail" name="newsletter-mail" placeholder="Ваш e-mail">
-        <label for="newsletter-mail">Подписаться</label>
+        <input class="field" type="email" id="newsletter-mail" name="newsletter-mail" placeholder="Ваш e-mail" required>
+        <label for="newsletter-mail">
+        <button class="newsletter-button" type="submit">Подписаться</button>
+        </label>
       </form>
     </section>
   </main>
