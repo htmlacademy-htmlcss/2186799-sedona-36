@@ -120,6 +120,12 @@ display: flex;
   text-align: center;
 }
 
+.hero-image {
+  display: block;
+  width: 458px;
+  margin: 0 auto;
+}
+
 .advantages-title {
   font-weight: 700;
   font-size: 30px;
@@ -138,11 +144,31 @@ display: flex;
 
 .advantages-list {
   text-align: center;
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
 }
 
 .real-city-item,
 .devils-bridge-item {
   background-color: #82B3D3;
+  display: flex;
+}
+
+.advantages-wrapper {
+  width: 400px;
+}
+
+.small-square-item,
+.beauty-road-item,
+.few-tourists-item {
+  width: 400px;
+}
+
+.advantages-list-image {
+  width: 800px;
 }
 
 .small-square-item,
