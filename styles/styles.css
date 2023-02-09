@@ -126,6 +126,11 @@ display: flex;
   margin: 0 auto;
 }
 
+.advantages {
+  margin: 0 auto;
+  width: 1200px;
+}
+
 .advantages-title {
   font-weight: 700;
   font-size: 30px;
@@ -201,8 +206,21 @@ display: flex;
   color: #FFFFFF;
 }
 
+.servises {
+  margin: 0 auto;
+  width: 1200px;
+}
+
 .servises-list {
   text-align: center;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.servises-item {
+  width: 400px;
 }
 
 .servises-title {
@@ -224,6 +242,11 @@ display: flex;
 .shadow {
   background: #FFFFFF;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 15px;
+}
+
+.offers {
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .offer-title {
@@ -254,6 +277,8 @@ display: flex;
   background-color: #4682B4;
   color: #FFFFFF;
   background-size: cover;
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .newsletter-title {
@@ -295,6 +320,30 @@ display: flex;
   border-radius: 4px 0px 0px 4px;
 }
 
+.main-footer {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-container {
+  margin: 0 auto;
+  width: 1060px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-social {
+  width: 190px;
+  display: flex;
+}
+
+.footer-social-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
 .contact-phone {
   font-weight: 400;
   font-size: 40px;
@@ -304,6 +353,11 @@ display: flex;
   color: #000000;
   text-decoration: none;
   font-style: normal;
+  width: 720px;
+}
+
+.HTML-academy-logo {
+  width: 115px;
 }
 
 .hotels-search {
