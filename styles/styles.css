@@ -41,6 +41,11 @@ img {
   width: 1200px;
   display: flex;
   flex-direction: column;
+  min-height: 100%;
+}
+
+.main-container {
+  flex-grow: 1;
 }
 
 .main-header {
@@ -97,7 +102,8 @@ display: flex;
   border-radius: 4px;
 }
 
-/* .visually-hidden {
+/*
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -124,11 +130,6 @@ display: flex;
   display: block;
   width: 458px;
   margin: 0 auto;
-}
-
-.advantages {
-  margin: 0 auto;
-  width: 1200px;
 }
 
 .advantages-title {
@@ -206,11 +207,6 @@ display: flex;
   color: #FFFFFF;
 }
 
-.servises {
-  margin: 0 auto;
-  width: 1200px;
-}
-
 .servises-list {
   text-align: center;
   display: flex;
@@ -245,8 +241,7 @@ display: flex;
 }
 
 .offers {
-  width: 1200px;
-  margin: 0 auto;
+  text-align: center;
 }
 
 .offer-title {
@@ -277,8 +272,7 @@ display: flex;
   background-color: #4682B4;
   color: #FFFFFF;
   background-size: cover;
-  width: 1200px;
-  margin: 0 auto;
+  text-align: center;
 }
 
 .newsletter-title {
@@ -320,11 +314,6 @@ display: flex;
   border-radius: 4px 0px 0px 4px;
 }
 
-.main-footer {
-  width: 1200px;
-  margin: 0 auto;
-}
-
 .footer-container {
   margin: 0 auto;
   width: 1060px;
@@ -342,7 +331,6 @@ display: flex;
   padding: 0;
   list-style: none;
 }
-
 
 .contact-phone {
   font-weight: 400;
@@ -368,6 +356,11 @@ display: flex;
   background-size: cover;
 }
 
+.inner-header {
+  width: 1060px;
+  margin: 0 auto;
+}
+
 .inner-header-title {
   font-weight: 700;
   font-size: 60px;
@@ -380,6 +373,15 @@ display: flex;
   font-size: 16px;
   line-height: 21px;
   color: #FFFFFF;
+}
+
+.catalog-filter-container {
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.catalog-filter {
+  display: flex;
 }
 
 .catalog-filter-title {
@@ -421,8 +423,13 @@ display: flex;
 .catalog-hotels {
   background-color: #FFFFFF;
   color: #000000;
+  width: 1060px;
+  margin: 0 auto;
 }
 
+.sorting-container {
+  display: flex;
+}
 
 .search-paragraph {
   font-weight: 700;
@@ -430,6 +437,8 @@ display: flex;
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
+  margin-right: 192px;
+  width: 338px;
 }
 
 .select-control {
@@ -438,11 +447,39 @@ display: flex;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+  width: 292px;
+}
+
+.card-visual-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  margin-left: 70px;
+  width: 160px;
 }
 
 .hotel-card-link {
   text-decoration: none;
   color: #000000;
+}
+
+.hotel-card-list {
+  padding:0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.hotel-card-item {
+  width: 340px;
+}
+
+.hotel-card-image {
+  width: 300px;
+  padding: 20px;
+  padding-bottom: 16px;
 }
 
 .hotel-card-title {
@@ -509,6 +546,7 @@ display: flex;
 .catalog-newsletter {
   background-color: #FFFFFF;
   color: #000000;
+  text-align: center;
 }
 
 .catalog-newsletter-title {
