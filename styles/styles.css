@@ -14,6 +14,10 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
@@ -21,6 +25,9 @@ body {
   background-color: #F2F2F2;
   color: #333333;
   margin: 0;
+  min-height: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 img {
@@ -33,6 +40,47 @@ img {
   background-color: #FFFFFF;
   margin: 0 auto;
   width: 1200px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+.main-header {
+  display: flex;
+}
+
+.header-logo {
+  width: 138px;
+  display: block;
+  margin-right: 30px;
+  margin-left: 70px;
+}
+
+.main-navigation {
+  display: flex;
+  width: 892 px;
+  margin: 0 auto;
+}
+
+.navigation-list {
+margin: 0;
+padding: 0;
+list-style: none;
+width: 465px;
+display: flex;
+}
+
+.navigation-user-list {
+margin: 0;
+padding: 0;
+list-style: none;
+width: 310px;
+margin-left: auto;
+display: flex;
 }
 
 .navigation-link {
@@ -79,6 +127,12 @@ img {
   text-align: center;
 }
 
+.hero-image {
+  display: block;
+  width: 458px;
+  margin: 0 auto;
+}
+
 .advantages-title {
   font-weight: 700;
   font-size: 30px;
@@ -97,15 +151,37 @@ img {
 
 .advantages-list {
   text-align: center;
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
 }
 
 .real-city-item,
 .devils-bridge-item {
   background-color: #82B3D3;
+  display: flex;
+}
+
+.advantages-wrapper {
+  width: 400px;
 }
 
 .small-square-item,
+.beauty-road-item,
 .few-tourists-item {
+  width: 400px;
+}
+
+.advantages-list-image {
+  width: 800px;
+}
+
+.small-square-item,
+.few-tourists-item,
+.house-item,
+.souvenirs-item {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
@@ -134,6 +210,14 @@ img {
 
 .servises-list {
   text-align: center;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.servises-item {
+  width: 400px;
 }
 
 .servises-title {
@@ -155,6 +239,10 @@ img {
 .shadow {
   background: #FFFFFF;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 15px;
+}
+
+.offers {
+  text-align: center;
 }
 
 .offer-title {
@@ -185,6 +273,7 @@ img {
   background-color: #4682B4;
   color: #FFFFFF;
   background-size: cover;
+  text-align: center;
 }
 
 .newsletter-title {
@@ -226,6 +315,24 @@ img {
   border-radius: 4px 0px 0px 4px;
 }
 
+.footer-container {
+  margin: 0 auto;
+  width: 1060px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-social {
+  width: 190px;
+  display: flex;
+}
+
+.footer-social-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .contact-phone {
   font-weight: 400;
   font-size: 40px;
@@ -235,6 +342,11 @@ img {
   color: #000000;
   text-decoration: none;
   font-style: normal;
+  width: 720px;
+}
+
+.HTML-academy-logo {
+  width: 115px;
 }
 
 .hotels-search {
@@ -243,6 +355,11 @@ img {
   color: #FFFFFF;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.inner-header {
+  width: 1060px;
+  margin: 0 auto;
 }
 
 .inner-header-title {
@@ -257,6 +374,15 @@ img {
   font-size: 16px;
   line-height: 21px;
   color: #FFFFFF;
+}
+
+.catalog-filter-container {
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.catalog-filter {
+  display: flex;
 }
 
 .catalog-filter-title {
@@ -298,8 +424,13 @@ img {
 .catalog-hotels {
   background-color: #FFFFFF;
   color: #000000;
+  width: 1060px;
+  margin: 0 auto;
 }
 
+.sorting-container {
+  display: flex;
+}
 
 .search-paragraph {
   font-weight: 700;
@@ -307,6 +438,8 @@ img {
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
+  margin-right: 192px;
+  width: 338px;
 }
 
 .select-control {
@@ -315,11 +448,39 @@ img {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+  width: 292px;
+}
+
+.card-visual-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  margin-left: 70px;
+  width: 160px;
 }
 
 .hotel-card-link {
   text-decoration: none;
   color: #000000;
+}
+
+.hotel-card-list {
+  padding:0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.hotel-card-item {
+  width: 340px;
+}
+
+.hotel-card-image {
+  width: 300px;
+  padding: 20px;
+  padding-bottom: 16px;
 }
 
 .hotel-card-title {
@@ -360,6 +521,17 @@ img {
   border-radius: 4px;
 }
 
+.pagination {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.pagination-item {
+  width: 60px;
+}
+
 .pagination-link {
   text-decoration: none;
   font-weight: 700;
@@ -386,6 +558,7 @@ img {
 .catalog-newsletter {
   background-color: #FFFFFF;
   color: #000000;
+  text-align: center;
 }
 
 .catalog-newsletter-title {
