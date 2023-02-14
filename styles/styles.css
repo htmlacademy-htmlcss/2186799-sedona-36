@@ -147,12 +147,13 @@ align-items: center;
   background-color: #4682B4;
   color: #FFFFFF;
   text-align: center;
+  padding: 51px 371px 82px;
 }
 
 .hero-image {
   display: block;
   width: 458px;
-  padding: 51px 371px 82px;
+  margin: 0 auto;
 }
 
 .advantages-title {
@@ -235,6 +236,12 @@ align-items: center;
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+  margin: 0;
+  margin-bottom: 64px;
+}
+
+.list-paragraph {
+  margin: 0;
 }
 
 .real-city-title,
@@ -247,21 +254,6 @@ align-items: center;
   color: #FFFFFF;
 }
 
-.servises-list {
-  text-align: center;
-  display: flex;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.servises-item {
-  width: 400px;
-}
-
-.servises-item-wrapper {
-  padding: 81px 85px;
-}
 
 .servises-title {
   font-weight: 700;
@@ -279,6 +271,32 @@ align-items: center;
   line-height: 26px;
   text-align: center;
   margin: 0px 355px 64px;
+}
+
+.servises-list {
+  text-align: center;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.servises-item {
+  width: 400px;
+  min-height: 385px;
+}
+
+.servises-item-wrapper {
+  padding: 81px 85px;
+}
+
+.servises-item-title {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.servises-item-paragraph {
+  margin: 0;
 }
 
 .offers {
