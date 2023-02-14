@@ -163,7 +163,7 @@ align-items: center;
   text-transform: uppercase;
   color: #000000;
   margin: 0;
-  padding: 69px 290px 25px;
+  margin: 69px 290px 25px;
 }
 
 .advantages-paragraph {
@@ -171,8 +171,7 @@ align-items: center;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
-  margin: 0;
-  padding: 0px 275px 69px;
+  margin: 0px 275px 69px;
   width: 651px;
 }
 
@@ -271,8 +270,7 @@ align-items: center;
   text-align: center;
   text-transform: uppercase;
   color: #000000;
-  margin: 0;
-  padding: 64px 348px 20px;
+  margin: 64px 348px 20px;
 }
 
 .servises-paragraph {
@@ -280,8 +278,7 @@ align-items: center;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
-  margin: 0;
-  padding: 0px 355px 64px;
+  margin: 0px 355px 64px;
 }
 
 .offers {
@@ -700,10 +697,11 @@ align-items: center;
   background-color: #82B3D3;
   border-radius: 4px;
   display: block;
-  width: 60px;
+  min-width: 60px;
   height: 60px;
-  padding: 12px 24px;
+  padding: 12px 12px;
   box-sizing: border-box;
+  text-align: center;
 }
 
 .pagination-current {
