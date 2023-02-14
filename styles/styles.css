@@ -216,6 +216,8 @@ align-items: center;
 
 .advantages-list-image {
   width: 800px;
+  display: block;
+  min-height: 385px;
 }
 
 .small-square-item,
