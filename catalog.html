@@ -10,6 +10,7 @@
 <body>
   <div class="box-shadow-container">
   <header class="main-header">
+    <div class="header-navigation-container">
     <a class="header-logo" href="index.html">
       <img src="images/logo.svg" width="140" height="70" alt="Логотип.">
     </a>
@@ -38,10 +39,11 @@
           </a>
         </li>
         <li class="navigation-item">
-          <a class="button navigation-link">Хочу сюда!</a>
+          <a class="button navigation-link-button">Хочу сюда!</a>
         </li>
       </ul>
     </nav>
+    </div>
   </header>
   <main class="main-inner">
     <section class="hotels-search">
@@ -58,9 +60,10 @@
         </li>
       </ol>
     </header>
-    <div class="catalog-filter-container">
+    <!---<div class="catalog-filter-container"> Кажется, что этот контейнер лишний. Форма и без него встает во флекс.--->
       <h2 class="visually-hidden">Список гостиниц с фильтрами.</h2>
       <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+        <div class="checkbox-container">
         <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-title">Инфраструктура:</legend>
           <ul class="catalog-filter-list">
@@ -108,14 +111,17 @@
             </li>
           </ul>
         </fieldset>
+        </div>
+        <div class="price-container">
         <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-title">Стоимость, ₽:</legend>
         <!--Поле с ценой в скринкасте советовали не трогать, так как подробное объяснение для таких элементов будет позже-->
         <button class="button-check" type="submit">Применить</button>
         <button class="button-reset" type="reset">Сбросить</button>
       </fieldset>
-      </form>
     </div>
+      </form>
+    <!---</div>--->
     </section>
     <section class="catalog-hotels">
      <h2 class="visually-hidden">Поиск гостиниц в Седоне</h2>
@@ -228,14 +234,16 @@
       </ol>
     </section>
     <section class="catalog-newsletter">
+      <div class="catalog-newsletter-container">
       <h2 class="catalog-newsletter-title">Подпишитесь на рассылку</h2>
       <p class="catalog-newsletter-paragraph">Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
         <input class="field" type="email" id="newsletter-mail" name="newsletter-mail" placeholder="Ваш e-mail" required>
         <label for="newsletter-mail">
-        <button class="newsletter-button" type="submit">Подписаться</button>
+        <button class="button newsletter-button" type="submit">Подписаться</button>
         </label>
       </form>
+    </div>
     </section>
   </main>
   <footer class="main-footer">
