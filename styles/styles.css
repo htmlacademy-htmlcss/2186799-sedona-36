@@ -324,7 +324,7 @@ justify-content: flex-end;
 .offers-wrapper {
   width: 592px;
   margin: 0 auto;
-  padding: 96px 304px;
+  padding: 96px 0;
 }
 
 .offers-title {
@@ -374,7 +374,7 @@ justify-content: flex-end;
 .catalog-newsletter-container {
   width: 684px;
   margin: 0 auto;
-  padding: 96px 258px 104px;
+  padding: 96px 0px 104px;
 }
 
 .newsletter-title {
@@ -426,12 +426,13 @@ justify-content: flex-end;
   border: none;
 }
 
+/*  Footer */
+
 .main-footer {
   min-height: 120px;
 }
 
 .footer-container {
-  margin: 0 auto;
   width: 1060px;
   display: flex;
   justify-content: space-between;
@@ -455,6 +456,10 @@ justify-content: flex-end;
   height: 40px;
 }
 
+.contact-phone-number {
+  width: 720px;
+}
+
 .contact-phone {
   font-weight: 400;
   font-size: 40px;
@@ -464,12 +469,16 @@ justify-content: flex-end;
   color: #000000;
   text-decoration: none;
   font-style: normal;
-  width: 720px;
+  display: block;
 }
 
 .HTML-academy-logo {
   width: 115px;
 }
+
+/* Каталог
+   Секция Поиск отеля
+   */
 
 .hotels-search {
   background-image: url(../images/background-filter-image.jpg);
@@ -524,6 +533,7 @@ justify-content: flex-end;
   padding: 0;
   border: none;
   margin-right: 70px;
+  max-width: 152px;
 }
 
 .checkbox-container {
@@ -600,7 +610,7 @@ justify-content: flex-end;
 
 .sorting-container {
   display: flex;
-  max-height: 49px;
+  align-items: center;
   margin-bottom: 46px;
 }
 
@@ -632,7 +642,7 @@ justify-content: flex-end;
   padding: 0;
   list-style: none;
   display: flex;
-  margin-left: 70px;
+  margin-left: auto;
   width: 160px;
   flex-wrap: wrap;
 }
@@ -650,8 +660,9 @@ justify-content: flex-end;
 .hotel-card-list {
   padding:0;
   margin: 0;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(3,340px);
   list-style: none;
   margin-bottom: 80px;
 }
@@ -662,7 +673,9 @@ justify-content: flex-end;
 }
 
 .hotel-card-item {
-  width: 340px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #E6E6E6;
 }
 
 .hotel-card-image {
@@ -675,6 +688,17 @@ justify-content: flex-end;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+  margin: 0;
+  margin-bottom: 16px;
+  padding-left: 20px;
+}
+
+.hotel-card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2,140px);
+  row-gap: 16px;
+  column-gap: 20px;
+  padding: 20px;
 }
 
 .hotel-price {
@@ -736,7 +760,7 @@ justify-content: flex-end;
   border-radius: 4px;
   display: block;
   min-width: 60px;
-  height: 60px;
+  min-height: 60px;
   padding: 12px 12px;
   box-sizing: border-box;
   text-align: center;
