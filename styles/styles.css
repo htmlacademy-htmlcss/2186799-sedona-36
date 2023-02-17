@@ -59,20 +59,23 @@ img {
   flex-grow: 1;
 }
 
+/* Header */
+
 .main-header {
   min-height: 64px;
-}
-
-.header-navigation-container {
   width: 1060px;
   display: flex;
   margin: 0 auto;
 }
 
+.logo-image {
+  display: block;
+}
+
 .header-logo {
   width: 138px;
   display: block;
-  margin-bottom: -10px;
+  margin-bottom: -6px;
   position: relative;
   margin-right: 30px;
 }
@@ -99,6 +102,7 @@ display: flex;
 width: 310px;
 flex-wrap: wrap;
 align-items: center;
+justify-content: flex-end;
 }
 
 .navigation-user-list .navigation-link {
@@ -138,16 +142,18 @@ align-items: center;
   box-sizing: border-box;
 }
 
+/* Секция Hero */
+
 .hero {
   background-image: url(../images/divider-hero.svg),
   url(../images/index-background.jpg);
   background-repeat: no-repeat, no-repeat;
-  background-size: auto, cover;
+  background-size: contain, cover;
   background-position: bottom, center;
   background-color: #4682B4;
   color: #FFFFFF;
+  padding: 51px 150px 82px;
   text-align: center;
-  padding: 51px 371px 82px;
 }
 
 .hero-image {
@@ -156,8 +162,10 @@ align-items: center;
   margin: 0 auto;
 }
 
+/* Секция Advantages */
+
 .advantages-description-wrapper {
-padding: 69px 274px;
+  padding: 69px 274px;
 }
 
 .advantages-title {
@@ -208,10 +216,6 @@ padding: 69px 274px;
   display: flex;
 }
 
-.advantages-wrapper {
-  width: 400px;
-}
-
 .small-square-item,
 .beauty-road-item,
 .few-tourists-item {
@@ -243,7 +247,7 @@ padding: 69px 274px;
   text-transform: uppercase;
   color: #000000;
   margin: 0;
-  margin-bottom: 64px;
+  margin-bottom: 62px;
 }
 
 .list-paragraph {
@@ -259,6 +263,8 @@ padding: 69px 274px;
 .devils-bridge-paragraph {
   color: #FFFFFF;
 }
+
+/* Секуция Servises */
 
 .servises-description-wrapper {
   padding: 64px 347px;
@@ -309,6 +315,8 @@ padding: 69px 274px;
   margin: 0;
 }
 
+/* Секция Offers */
+
 .offers {
   text-align: center;
 }
@@ -319,7 +327,7 @@ padding: 69px 274px;
   padding: 96px 304px;
 }
 
-.offer-title {
+.offers-title {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -330,7 +338,7 @@ padding: 69px 274px;
   margin-bottom: 20px;
 }
 
-.offer-paragraph {
+.offers-paragraph {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
@@ -351,6 +359,8 @@ padding: 69px 274px;
   box-sizing: border-box;
   padding: 8px;
 }
+
+/* Секция Newsletter */
 
 .newsletter {
   background-image: url(../images/background-mailing-image.jpg);
