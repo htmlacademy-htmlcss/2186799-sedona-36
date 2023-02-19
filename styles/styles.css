@@ -193,9 +193,11 @@ justify-content: flex-end;
   padding: 101px 85px;
 }
 
+/*
 .advantages-wrapper-same {
   padding: 112px 85px;
 }
+*/
 
 .advantages-list {
   text-align: center;
@@ -220,6 +222,8 @@ justify-content: flex-end;
 .beauty-road-item,
 .few-tourists-item {
   width: 400px;
+  box-sizing: border-box;
+  height: 385px;
 }
 
 .advantages-list-image {
@@ -262,6 +266,12 @@ justify-content: flex-end;
 .real-city-paragraph,
 .devils-bridge-paragraph {
   color: #FFFFFF;
+}
+
+.small-square-title,
+.beauty-road-title,
+.few-tourists-title {
+  margin-top: 112px;
 }
 
 /* Секуция Servises */
@@ -711,16 +721,25 @@ justify-content: flex-end;
 
 .hotel-description-button {
   text-decoration: none;
+  border: none;
+  min-width: 140px;
+  min-height: 36px;
 }
 
 .button-favorites {
   font-family: "PT Sans", sans-serif;
   background-color: #82B3D3;
+  border: none;
+  min-width: 140px;
+  min-height: 36px;
 }
 
 .button-favorites-checked {
   font-family: "PT Sans", sans-serif;
   background-color: #7DB54F;
+  border: none;
+  min-width: 140px;
+  min-height: 36px;
 }
 
 .rating {
