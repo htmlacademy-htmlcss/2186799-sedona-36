@@ -46,6 +46,12 @@ img {
   object-fit: contain;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .box-shadow-container {
   background-color: #FFFFFF;
   margin: 0 auto;
@@ -312,17 +318,14 @@ justify-content: flex-end;
   min-height: 385px;
 }
 
-.servises-item-wrapper {
-  padding: 81px 85px;
-}
-
 .servises-item-title {
-  margin: 0;
+  margin-top: 182px;
   margin-bottom: 30px;
 }
 
 .servises-item-paragraph {
-  margin: 0;
+  margin: 0 auto;
+  margin-bottom: 81px;
 }
 
 /* Секция Offers */
@@ -723,7 +726,8 @@ justify-content: flex-end;
   text-decoration: none;
   border: none;
   min-width: 140px;
-  min-height: 36px;
+  padding: 8px 24px;
+  box-sizing: border-box;
 }
 
 .button-favorites {
@@ -750,6 +754,8 @@ justify-content: flex-end;
   text-transform: uppercase;
   background-color: #F2F2F2;
   border-radius: 4px;
+  padding: 9px 22px;
+  box-sizing: border-box;
 }
 
 .pagination {
