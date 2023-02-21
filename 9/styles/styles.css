@@ -171,7 +171,9 @@ justify-content: flex-end;
 /* Секция Advantages */
 
 .advantages-description-wrapper {
-  padding: 69px 274px;
+  width: 651px;
+  margin: 0 auto;
+  padding: 69px 0px;
 }
 
 .advantages-title {
@@ -198,12 +200,6 @@ justify-content: flex-end;
 .advantages-wrapper-bridge {
   padding: 101px 85px;
 }
-
-/*
-.advantages-wrapper-same {
-  padding: 112px 85px;
-}
-*/
 
 .advantages-list {
   text-align: center;
@@ -283,7 +279,9 @@ justify-content: flex-end;
 /* Секуция Servises */
 
 .servises-description-wrapper {
-  padding: 64px 347px;
+  width: 505px;
+  margin: 0 auto;
+  padding: 64px 0px;
 }
 
 .servises-title {
@@ -712,6 +710,7 @@ justify-content: flex-end;
   row-gap: 16px;
   column-gap: 20px;
   padding: 20px;
+  margin-top: auto;
 }
 
 .hotel-price {
@@ -726,8 +725,7 @@ justify-content: flex-end;
   text-decoration: none;
   border: none;
   min-width: 140px;
-  padding: 8px 24px;
-  box-sizing: border-box;
+  padding: 8px 10px;
 }
 
 .button-favorites {
@@ -735,7 +733,7 @@ justify-content: flex-end;
   background-color: #82B3D3;
   border: none;
   min-width: 140px;
-  min-height: 36px;
+  padding: 8px 10px;
 }
 
 .button-favorites-checked {
@@ -743,7 +741,7 @@ justify-content: flex-end;
   background-color: #7DB54F;
   border: none;
   min-width: 140px;
-  min-height: 36px;
+  padding: 8px 10px;
 }
 
 .rating {
