@@ -46,6 +46,12 @@ img {
   object-fit: contain;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .box-shadow-container {
   background-color: #FFFFFF;
   margin: 0 auto;
@@ -165,7 +171,9 @@ justify-content: flex-end;
 /* Секция Advantages */
 
 .advantages-description-wrapper {
-  padding: 69px 274px;
+  width: 651px;
+  margin: 0 auto;
+  padding: 69px 0px;
 }
 
 .advantages-title {
@@ -193,10 +201,6 @@ justify-content: flex-end;
   padding: 101px 85px;
 }
 
-.advantages-wrapper-same {
-  padding: 112px 85px;
-}
-
 .advantages-list {
   text-align: center;
   display: flex;
@@ -220,6 +224,8 @@ justify-content: flex-end;
 .beauty-road-item,
 .few-tourists-item {
   width: 400px;
+  box-sizing: border-box;
+  height: 385px;
 }
 
 .advantages-list-image {
@@ -264,10 +270,18 @@ justify-content: flex-end;
   color: #FFFFFF;
 }
 
+.small-square-title,
+.beauty-road-title,
+.few-tourists-title {
+  margin-top: 112px;
+}
+
 /* Секуция Servises */
 
 .servises-description-wrapper {
-  padding: 64px 347px;
+  width: 505px;
+  margin: 0 auto;
+  padding: 64px 0px;
 }
 
 .servises-title {
@@ -302,17 +316,14 @@ justify-content: flex-end;
   min-height: 385px;
 }
 
-.servises-item-wrapper {
-  padding: 81px 85px;
-}
-
 .servises-item-title {
-  margin: 0;
+  margin-top: 182px;
   margin-bottom: 30px;
 }
 
 .servises-item-paragraph {
-  margin: 0;
+  margin: 0 auto;
+  margin-bottom: 81px;
 }
 
 /* Секция Offers */
@@ -699,6 +710,7 @@ justify-content: flex-end;
   row-gap: 16px;
   column-gap: 20px;
   padding: 20px;
+  margin-top: auto;
 }
 
 .hotel-price {
@@ -711,16 +723,25 @@ justify-content: flex-end;
 
 .hotel-description-button {
   text-decoration: none;
+  border: none;
+  min-width: 140px;
+  padding: 8px 10px;
 }
 
 .button-favorites {
   font-family: "PT Sans", sans-serif;
   background-color: #82B3D3;
+  border: none;
+  min-width: 140px;
+  padding: 8px 10px;
 }
 
 .button-favorites-checked {
   font-family: "PT Sans", sans-serif;
   background-color: #7DB54F;
+  border: none;
+  min-width: 140px;
+  padding: 8px 10px;
 }
 
 .rating {
@@ -731,6 +752,8 @@ justify-content: flex-end;
   text-transform: uppercase;
   background-color: #F2F2F2;
   border-radius: 4px;
+  padding: 9px 22px;
+  box-sizing: border-box;
 }
 
 .pagination {
