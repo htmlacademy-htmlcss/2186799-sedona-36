@@ -786,6 +786,7 @@ margin-right: 28px;
 .hotel-card-image {
   width: 300px;
   margin-bottom: 16px;
+  display: block;
 }
 
 .hotel-card-title {
