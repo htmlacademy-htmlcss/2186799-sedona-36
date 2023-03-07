@@ -913,6 +913,7 @@ justify-content: flex-end;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
+  appearance: textfield;
 }
 
 .catalog-min {
@@ -946,6 +947,12 @@ justify-content: flex-end;
 }
 
 .catalog-min::-webkit-outer-spin-button,
+.catalog-min::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.catalog-max::-webkit-outer-spin-button,
 .catalog-max::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
