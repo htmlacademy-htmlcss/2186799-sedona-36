@@ -853,7 +853,6 @@ justify-content: flex-end;
   opacity: 0.5;
 }
 
-/* Не работают состояния
 .control:focus + .control-mark {
   outline: 3px solid #83B3D3;
 }
@@ -865,7 +864,6 @@ justify-content: flex-end;
 .control-input:disabled + .control-mark {
 
 }
-*/
 
 .control-label {
   margin-left: 16px;
