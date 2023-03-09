@@ -164,6 +164,48 @@
           <span class="visually-hidden">Логотип HTML-academy, компании-разработчика сайта.</span>
       </a>
   </footer>
+  <div class="modal-container">
+    <div class="modal modal-search">
+      <button class="modal-close-button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+      <section class="modal-content">
+        <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+        <form class="modal-search-form" action="https://echo.htmlacademy.ru/" method="post">
+          <h3 class="visually-hidden">Форма поиска гостиницы.</h3>
+            <p class="check-in-wrapper">
+            <label class="modal-control" for="check-in-date">Дата Заезда:</label>
+              <input class="modal-dates-field" type="text" value="27 апреля 2020" name="check-in-date" id="check-in-date" required>
+          </p>
+          <p class="modal-error">Мы не можем отправить вас в прошлое.</p>
+          <p class="check-in-wrapper">
+            <label class="modal-control" for="check-out-date">Дата Выезда:</label>
+              <input class="modal-dates-field" type="text" value="1 сентября 2023" name="check-out-date" id="check-out-date" required>
+          </p>
+          <p class="modal-warning">На эти даты есть свободные номера. Пока есть.</p>
+          <div class="visitors-wrapper">
+            <div class="adults-wrapper">
+              <label class="modal-control" for="quantity-adult">Взрослые:</label>
+              <div class="quantity-wrapper">
+                <button class="modal-button minus-button" type="button"></button>
+                <input class="input-visitor" type="number" id="quantity-adult" name="quantity-adult" value="2">
+                <button class="modal-button plus-button" type="button"></button>
+              </div>
+            </div>
+            <div class="childs-wrapper">
+              <label class="modal-control" for="quantity-adult">Дети:</label>
+              <div class="quantity-wrapper child-quantity">
+                <button class="modal-button minus-button" type="button"></button>
+                <input class="input-visitor" type="number" id="quantity-adult" name="quantity-adult" value="2">
+                <button class="modal-button plus-button" type="button"></button>
+            </div>
+          </div>
+          </div>
+          <button class="button modal-search-button">Найти</button>
+        </form>
+      </section>
+    </div>
+  </div>
 </body>
 
 </html>

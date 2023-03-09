@@ -12,7 +12,7 @@
   <div class="box-shadow-container">
   <header class="main-header">
     <a class="header-logo" href="index.html">
-      <img src="images/logo.svg" width="140" height="70" alt="Логотип.">
+      <img class="logo-image" src="images/logo.svg" width="140" height="70" alt="Логотип.">
     </a>
     <nav class="main-navigation">
       <ul class="navigation-list">
@@ -39,7 +39,7 @@
           </a>
         </li>
         <li class="navigation-item">
-          <a class="button navigation-link-button">Хочу сюда!</a>
+          <a class="button navigation-link-button" href="#">Хочу сюда!</a>
         </li>
       </ul>
     </nav>
@@ -67,14 +67,14 @@
           <ul class="catalog-filter-list">
             <li class="catalog-filter-item">
               <label class="control">
-                <input class="visially-hidden control-input" type="checkbox" name="pool" checked>
+                <input class="visually-hidden control-input" type="checkbox" name="pool" checked>
                 <span class="control-mark"></span>
                 <span class="control-label">Бассейн</span>
               </label>
             </li>
             <li class="catalog-filter-item">
               <label class="control">
-                <input class="visially-hidden control-input" type="checkbox" name="parking" checked>
+                <input class="visually-hidden control-input" type="checkbox" name="parking" checked>
                 <span class="control-mark"></span>
                 <span class="control-label">Парковка</span>
               </label>
@@ -82,7 +82,7 @@
             <li class="catalog-filter-item">
               </label>
               <label class="control">
-                <input class="visially-hidden control-input" type="checkbox" name="Wi-Fi">
+                <input class="visually-hidden control-input" type="checkbox" name="Wi-Fi">
                 <span class="control-mark"></span>
                 <span class="control-label">Wi-Fi</span>
               </label>
@@ -94,21 +94,21 @@
           <ul class="catalog-filter-list">
             <li class="catalog-filter-item">
               <label class="control">
-                <input class="visially-hidden control-input" type="radio" name="type-of-housing" value="hotels" checked>
+                <input class="visually-hidden control-input" type="radio" name="type-of-housing" value="hotels" checked>
                 <span class="control-mark"></span>
                 <span class="control-label">Гостиница</span>
               </label>
             </li>
             <li class="catalog-filter-item">
               <label class="control">
-                <input class="visially-hidden control-input" type="radio" name="type-of-housing" value="motels">
+                <input class="visually-hidden control-input" type="radio" name="type-of-housing" value="motels">
                 <span class="control-mark"></span>
                 <span class="control-label">Мотель</span>
               </label>
             </li>
             <li class="catalog-filter-item">
               <label class="control">
-                <input class="visially-hidden control-input" type="radio" name="type-of-housing" value="appartments">
+                <input class="visually-hidden control-input" type="radio" name="type-of-housing" value="appartments">
                 <span class="control-mark"></span>
                 <span class="control-label">Апартаменты</span>
               </label>
@@ -121,14 +121,12 @@
           <legend class="catalog-filter-title">Стоимость, ₽:</legend>
           <div class="range-wrapper-inputs">
             <label class="catalog-filter-label">
-              <div class="price-wrapper">
               <input class="catalog-min" type="number" name="min-sum" value="0">
               <span class="from-to">от</span>
-            </div>
-            <div class="price-wrapper">
+            </label>
+            <label class="catalog-filter-label">
             <input class="catalog-max" type="number" name="max-sum" value="9000">
             <span class="from-to">до</span>
-          </div>
           </label>
           </div>
           <div class="range">
@@ -247,7 +245,7 @@
       </ul>
       <ol class="pagination">
         <li class="pagination-item">
-          <a class="pagination-link pagination-current" href="#">1</a>
+          <a class="pagination-link pagination-current">1</a>
         </li>
         <li class="pagination-item">
           <a class="pagination-link" href="#">2</a>
