@@ -171,15 +171,15 @@
       <section class="modal-content">
         <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
         <form class="modal-search-form" action="https://echo.htmlacademy.ru/" method="post">
-          <h3 class="visually-hidden">Форма поиска гостиницы.</h3>
+          <!---<h3 class="visually-hidden">Форма поиска гостиницы.</h3> Заголовок форме не нужен--->
             <p class="check-in-wrapper">
             <label class="modal-control" for="check-in-date">Дата Заезда:</label>
-              <input class="modal-dates-field" type="text" value="27 апреля 2020" name="check-in-date" id="check-in-date" required>
+              <input class="modal-dates-field" type="text" value="27 апреля 2020" name="check-in-date" id="check-in-date" placeholder="Укажите дату" required>
           </p>
           <p class="modal-error">Мы не можем отправить вас в прошлое.</p>
           <p class="check-in-wrapper">
             <label class="modal-control" for="check-out-date">Дата Выезда:</label>
-              <input class="modal-dates-field" type="text" value="1 сентября 2023" name="check-out-date" id="check-out-date" required>
+              <input class="modal-dates-field" type="text" value="1 сентября 2023" name="check-out-date" id="check-out-date" placeholder="Укажите дату" required>
           </p>
           <p class="modal-warning">На эти даты есть свободные номера. Пока есть.</p>
           <div class="visitors-wrapper">
@@ -192,7 +192,19 @@
               </div>
             </div>
             <div class="childs-wrapper">
-              <label class="modal-control" for="quantity-adult">Дети:</label>
+              <span class="visitors-children form-label-icon">
+              <label class="modal-control modal-control-children" for="quantity-adult">Дети:</label>
+              <span class="tooltip" role="tooltip" id="tooltip-label-date">
+                <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
+                  <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="2" height="12" fill="none" viewBox="0 0 2 12">
+                    <path fill="#fff" fill-rule="evenodd" d="M0 0h2v2H0V0Zm2 12H0V3h2v9Z" clip-rule="evenodd"/>
+                  </svg>
+                </button>
+                <span class="tooltip-text">
+                  Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                </span>
+              </span>
+            </span>
               <div class="quantity-wrapper child-quantity">
                 <button class="modal-button minus-button" type="button"></button>
                 <input class="input-visitor" type="number" id="quantity-adult" name="quantity-adult" value="2">

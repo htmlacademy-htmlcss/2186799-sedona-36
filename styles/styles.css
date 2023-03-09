@@ -744,6 +744,14 @@ justify-content: flex-end;
   cursor: pointer;
 }
 
+.modal-close-button:hover {
+  background-color: #E6E6E6;
+}
+
+.modal-close-button:focus {
+  background-color: #E6E6E6;
+}
+
 .modal-title {
   margin: 0;
   font-weight: 700;
@@ -768,14 +776,29 @@ justify-content: flex-end;
   margin-right: 18px;
   text-transform: capitalize;
   width: 122px;
+  display: block;
+}
+
+.modal-control-children {
+  width: 49px;
+  margin-right: 0;
+}
+
+.visitors-children {
+  display: flex;
+  margin-right: 46px;
+  align-items: center;
 }
 
 .modal-dates-field {
   background-color: #F2F2F2;
+  font-family: inherit;
   color: #000000;
   border-radius: 4px;
   padding: 12px 20px;
   font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
   background-image: url(../images/calendar-icon.svg);
   background-position: right 20px top 16px;
   background-repeat: no-repeat;
@@ -793,6 +816,10 @@ justify-content: flex-end;
 .modal-dates-field:focus {
   outline: 3px solid #83B3D3;
   color: rgba(0, 0, 0, 1);
+}
+
+.modal-dates-field::placeholder {
+
 }
 
 .modal-error {
@@ -833,9 +860,9 @@ justify-content: flex-end;
 }
 
 .modal-button {
-  width: 40px;
-  height: 48px;
-  padding: 14px 10px;
+  width: 20px;
+  height: 20px;
+  margin: 14px 10px;
   border: transparent;
   cursor: pointer;
   position: relative;
@@ -843,8 +870,8 @@ justify-content: flex-end;
 
 .modal-button:before {
   position: absolute;
-  top: 23px;
-  left: 13px;
+  top: 10px;
+  left: 3px;
   width: 14px;
   height: 2px;
   background-color: rgba(117, 97, 87, 0.3);
@@ -854,21 +881,24 @@ justify-content: flex-end;
 .plus-button:after {
   transform: rotate(-90deg);
   position: absolute;
-  top: 23px;
-  left: 13px;
+  top: 10px;
+  left: 3px;
   width: 14px;
   height: 2px;
   background-color: rgba(117, 97, 87, 0.3);
   content: "";
 }
 
-.modal-button:hover + .modal-button:before{
-  color: #000000;
+.modal-button:hover:before {
+  background-color:#000000;
+}
+
+.modal-button:hover:after {
+  background-color:#000000;
 }
 
 .modal-button:focus {
   color: #000000;
-  outline: 3px solid #83B3D3;
 }
 
 .input-visitor {
@@ -880,6 +910,7 @@ justify-content: flex-end;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
+  font-family: inherit;
   border-radius: 0;
   -webkit-appearance: textfield;
           appearance: textfield;
@@ -890,10 +921,6 @@ justify-content: flex-end;
   -webkit-appearance: none;
           appearance: none;
   margin: 0;
-}
-
-.input-visitor:focus {
-  outline: 3px solid #83B3D3;
 }
 
 .adults-wrapper {
@@ -919,6 +946,7 @@ justify-content: flex-end;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+  font-family: inherit;
   padding: 18px 60px;
 }
 
@@ -930,6 +958,75 @@ justify-content: flex-end;
 .modal-search-button:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #82B3D3;
+}
+
+.tooltip {
+  margin-left: 9px;
+  position: relative;
+  display: block;
+  padding: 6px 0;
+}
+
+.tooltip-toggle {
+  border: none;
+  background-color: #83B3D3;
+  padding: 0;
+  margin: 0;
+  display: block;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.tooltip-icon {
+  width: 2px;
+  height: 12px;
+  color: #242424;
+  display: block;
+  position: absolute;
+  left: 12px;
+  bottom: 7px;
+}
+
+.tooltip-toggle:hover,
+.tooltip-toggle:focus {
+  background-color: #68A2CA;
+}
+
+.tooltip-text {
+  background-color: #333333;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: none;
+  padding: 15px 18px;
+  border-radius: 10px;
+  display: none;
+  width: 256px;
+  box-shadow:  0px 15px 30px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(15px);
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
+}
+
+.tooltip-text::before {
+  position: absolute;
+  content: "";
+  background-image: url(../images/tooltip-arrow.svg);
+  width: 19px;
+  height: 9px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 100%;
 }
 
 /* Каталог
