@@ -165,7 +165,7 @@ justify-content: flex-end;
   height: 2px;
   background-color: #756257;
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   right: 16px;
   left: 16px;
   border: none;
@@ -218,7 +218,6 @@ justify-content: flex-end;
 .button:hover,
 .button:focus {
   background-color: #615048;
-  outline: none;
 }
 
 .button:active {
@@ -316,6 +315,7 @@ justify-content: flex-end;
   width: 400px;
   box-sizing: border-box;
   height: 385px;
+  padding: 112px 85px;
 }
 
 .advantages-list-image {
@@ -364,7 +364,8 @@ justify-content: flex-end;
   text-transform: uppercase;
   color: #000000;
   margin: 0;
-  margin-bottom: 62px;
+  margin-bottom: 32px;
+  padding-bottom: 30px;
   position: relative;
 }
 
@@ -374,12 +375,9 @@ justify-content: flex-end;
   height: 2px;
   background-color: rgba(0, 0, 0, 0.3);
   position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  margin: auto;
-  margin-top: 86px;
+  right: 85px;
+  left: 85px;
+  bottom: -1px;
 }
 
 .advantages-wrapper-city .advantages-item-title::after{
@@ -407,7 +405,7 @@ justify-content: flex-end;
 .small-square-title,
 .beauty-road-title,
 .few-tourists-title {
-  margin-top: 112px;
+  margin-bottom: 32px;
 }
 
 /* Секуция Servises */
@@ -448,16 +446,16 @@ justify-content: flex-end;
 .servises-item {
   width: 400px;
   min-height: 385px;
+  padding: 183px 85px 81px;
 }
 
 .servises-item-title {
-  margin-top: 182px;
+  margin: 0;
   margin-bottom: 30px;
 }
 
 .servises-item-paragraph {
   margin: 0 auto;
-  margin-bottom: 81px;
 }
 
 /* Секция Offers */
@@ -558,7 +556,7 @@ justify-content: flex-end;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
   width: 452px;
-  padding: 14px 345px 14px 20px;
+  padding: 14px 20px;
   border: none;
 }
 
@@ -569,6 +567,13 @@ justify-content: flex-end;
 .field:focus {
   outline: 1px solid #4682B4;
   border: none;
+  background-color: #b7babd;
+}
+
+.field:not(:placeholder-shown) {
+  background-color: #F2F2F2;
+  color: #000000;
+  outline: 2px solid #000000;
 }
 
 .newsletter-button {
@@ -601,15 +606,17 @@ justify-content: flex-end;
 
 .main-footer {
   display: flex;
-  width: 1060px;
+  width: 100%;
   min-height: 120px;
   margin: 0 auto;
   align-items: center;
+  padding: 40px 70px 30px;
+  flex-wrap: wrap;
 }
 
 .footer-social {
   max-width: 190px;
-  margin: 0;
+  margin-right: auto;
 }
 
 .footer-social-list {
@@ -648,7 +655,8 @@ justify-content: flex-end;
 }
 
 .contact-phone-number {
-  width: 720px;
+  width: 400px;
+  min-height: 40px;
 }
 
 .contact-phone {
@@ -666,11 +674,15 @@ justify-content: flex-end;
 .contact-phone:hover,
 .contact-phone:focus {
   color: #756157;
-  outline: none;
 }
 
 .contact-phone:active {
   color: rgba(117, 97, 87, 0.3);
+}
+
+.footer-logo {
+  margin-left: auto;
+  display: block;
 }
 
 .HTML-academy-logo {
@@ -690,12 +702,26 @@ justify-content: flex-end;
   fill: rgba(117, 97, 87, 0.3);
 }
 
+/*
+Модальное окно
+*/
+
+.modal-container {
+  background-color: rgba(242, 242, 242, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
 /* Каталог
    Секция Поиск отеля
    */
 
 .hotels-search {
-  background-image: url(../images/background-filter-image.jpg);
+  background-image: url("../images/background-filter-image.jpg");
   background-color: #82B3D3;
   color: #FFFFFF;
   background-repeat: no-repeat;
@@ -751,7 +777,6 @@ justify-content: flex-end;
   margin-right: 11px;
   width: 15px;
   height: 15px;
-  padding: 10px 10px;
 }
 
 .breadcrumbs-home-link:hover {
@@ -768,11 +793,6 @@ justify-content: flex-end;
   margin-right: 11px;
 }
 
-/*
-.catalog-ilter-container {
-}
-*/
-
 .catalog-filter {
   display: flex;
 }
@@ -787,6 +807,7 @@ justify-content: flex-end;
 
 .catalog-filter-label {
   display: flex;
+  position: relative;
 }
 
 .checkbox-container {
@@ -825,6 +846,7 @@ justify-content: flex-end;
 .control {
   position: relative;
   display: block;
+  padding-left: 20px;
 }
 
 .control-mark {
@@ -853,16 +875,16 @@ justify-content: flex-end;
   opacity: 0.5;
 }
 
-.control:focus + .control-mark {
+.control-input:focus + .control-mark {
   outline: 3px solid #83B3D3;
 }
 
-.control-mark:focus {
-  outline: 3px solid #83B3D3;
+.control-input:active + .control-mark {
+  outline: 2px solid #83B3D3;
 }
 
 .control-input:disabled + .control-mark {
-
+  background-color: rgba(0, 0, 0, 0.25);
 }
 
 .control-label {
@@ -893,10 +915,6 @@ justify-content: flex-end;
 
 .range-wrapper-inputs {
   display: flex;
-}
-
-.price-wrapper {
-  position: relative;
 }
 
 .catalog-min,
@@ -990,7 +1008,7 @@ justify-content: flex-end;
 }
 
 .range-toggle:hover {
-  box-shadow: 0px 4px 10px 0px #00000040;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 
 .range-toggle:focus {
