@@ -716,6 +716,222 @@ justify-content: flex-end;
   height: 100%;
 }
 
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 64px 70px;
+  background-color: #FFFFFF;
+  border-radius: 30px;
+  box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
+}
+
+.modal-search {
+  width: 717px;
+}
+
+.modal-close-button {
+  position: absolute;
+  width: 52px;
+  height: 52px;
+  background-color: #F2F2F2;
+  border-radius: 50%;
+  top: 64px;
+  right: 52px;
+  border: none;
+  background-image: url(../images/modal-close.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.modal-title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 64px;
+}
+
+.check-in-wrapper {
+  display: flex;
+  margin: 0;
+}
+
+.modal-control {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  padding: 11px 0px;
+  margin-right: 18px;
+  text-transform: capitalize;
+  width: 122px;
+}
+
+.modal-dates-field {
+  background-color: #F2F2F2;
+  color: #000000;
+  border-radius: 4px;
+  padding: 12px 20px;
+  font-weight: 700;
+  background-image: url(../images/calendar-icon.svg);
+  background-position: right 20px top 16px;
+  background-repeat: no-repeat;
+  width: 440px;
+  min-height: 48px;
+  margin-bottom: 4px;
+  border: none;
+}
+
+.modal-dates-field:hover {
+  background-color: #E6E6E6;
+  color: rgba(0, 0, 0, 1);
+}
+
+.modal-dates-field:focus {
+  outline: 3px solid #83B3D3;
+  color: rgba(0, 0, 0, 1);
+}
+
+.modal-error {
+  margin: 0;
+  color: #FF5757;
+  font-weight: 400;
+  font-size: 16px;
+  padding-left: 157px;
+  padding-right: 70px;
+  margin-bottom: 23px;
+}
+
+.modal-warning {
+  margin: 0;
+  color: #333333;
+  font-weight: 400;
+  font-size: 16px;
+  padding-left: 157px;
+  padding-right: 70px;
+  margin-bottom: 23px;
+}
+
+.visitors-wrapper {
+  display: flex;
+  margin-bottom: 48px;
+}
+
+.quantity-wrapper {
+  display: flex;
+  width: 110px;
+  min-height: 48px;
+  background-color: #F2F2F2;
+  border-radius: 4px;
+}
+
+.child-quantity {
+  margin-right: 0;
+}
+
+.modal-button {
+  width: 40px;
+  height: 48px;
+  padding: 14px 10px;
+  border: transparent;
+  cursor: pointer;
+  position: relative;
+}
+
+.modal-button:before {
+  position: absolute;
+  top: 23px;
+  left: 13px;
+  width: 14px;
+  height: 2px;
+  background-color: rgba(117, 97, 87, 0.3);
+  content: "";
+}
+
+.plus-button:after {
+  transform: rotate(-90deg);
+  position: absolute;
+  top: 23px;
+  left: 13px;
+  width: 14px;
+  height: 2px;
+  background-color: rgba(117, 97, 87, 0.3);
+  content: "";
+}
+
+.modal-button:hover + .modal-button:before{
+  color: #000000;
+}
+
+.modal-button:focus {
+  color: #000000;
+  outline: 3px solid #83B3D3;
+}
+
+.input-visitor {
+  width: 31px;
+  border: none;
+  background-color: #F2F2F2;
+  padding: 5px 5px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  border-radius: 0;
+  -webkit-appearance: textfield;
+          appearance: textfield;
+}
+
+.input-visitor::-webkit-outer-spin-button,
+.input-visitor::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+          appearance: none;
+  margin: 0;
+}
+
+.input-visitor:focus {
+  outline: 3px solid #83B3D3;
+}
+
+.adults-wrapper {
+  display: flex;
+  width: 247px;
+}
+
+.childs-wrapper {
+  display: flex;
+  width: 242px;
+  margin-left: auto;
+}
+
+.modal-search-button {
+  width: 577px;
+  display: flex;
+  min-height: 60px;
+  background-color: #83B3D3;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  padding: 18px 60px;
+}
+
+.modal-search-button:hover,
+.modal-search-button:focus {
+  background-color: #68A2CA;
+}
+
+.modal-search-button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #82B3D3;
+}
+
 /* Каталог
    Секция Поиск отеля
    */
