@@ -716,6 +716,10 @@ justify-content: flex-end;
   height: 100%;
 }
 
+.modal-container-close {
+  display: none;
+}
+
 .modal {
   position: relative;
   margin: auto;
@@ -894,6 +898,14 @@ justify-content: flex-end;
 }
 
 .modal-button:hover:after {
+  background-color:#000000;
+}
+
+.modal-button:focus:before {
+  background-color:#000000;
+}
+
+.modal-button:focus:after {
   background-color:#000000;
 }
 
