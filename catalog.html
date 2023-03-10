@@ -11,7 +11,7 @@
   <div class="box-shadow-container">
   <header class="main-header">
     <a class="header-logo" href="index.html">
-      <img src="images/logo.svg" width="140" height="70" alt="Логотип.">
+      <img class="logo-image" src="images/logo.svg" width="140" height="70" alt="Логотип.">
     </a>
     <nav class="main-navigation">
       <ul class="navigation-list">
@@ -38,7 +38,7 @@
           </a>
         </li>
         <li class="navigation-item">
-          <a class="button navigation-link-button">Хочу сюда!</a>
+          <a class="button navigation-link-button" href="#">Хочу сюда!</a>
         </li>
       </ul>
     </nav>
@@ -58,7 +58,6 @@
         </li>
       </ol>
     </header>
-    <!---<div class="catalog-filter-container"> Кажется, что этот контейнер лишний. Форма и без него встает во флекс.--->
       <h2 class="visually-hidden">Список гостиниц с фильтрами.</h2>
       <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
         <div class="checkbox-container">
@@ -67,21 +66,24 @@
           <ul class="catalog-filter-list">
             <li class="catalog-filter-item">
               <label class="control">
-                <input class="control-input" type="checkbox" name="pool" checked>
-                Бассейн
+                <input class="visually-hidden control-input" type="checkbox" name="pool" checked>
+                <span class="control-mark"></span>
+                <span class="control-label">Бассейн</span>
               </label>
             </li>
             <li class="catalog-filter-item">
               <label class="control">
-                <input class="control-input" type="checkbox" name="parking" checked>
-                Парковка
+                <input class="visually-hidden control-input" type="checkbox" name="parking" checked>
+                <span class="control-mark"></span>
+                <span class="control-label">Парковка</span>
               </label>
             </li>
             <li class="catalog-filter-item">
               </label>
               <label class="control">
-                <input class="control-input" type="checkbox" name="Wi-Fi">
-                Wi-Fi
+                <input class="visually-hidden control-input" type="checkbox" name="Wi-Fi">
+                <span class="control-mark"></span>
+                <span class="control-label">Wi-Fi</span>
               </label>
             </li>
           </ul>
@@ -91,20 +93,23 @@
           <ul class="catalog-filter-list">
             <li class="catalog-filter-item">
               <label class="control">
-                <input class="control-input" type="radio" name="type-of-housing" value="hotels" checked>
-                Гостиница
+                <input class="visually-hidden control-input" type="radio" name="type-of-housing" value="hotels" checked>
+                <span class="control-mark"></span>
+                <span class="control-label">Гостиница</span>
               </label>
             </li>
             <li class="catalog-filter-item">
               <label class="control">
-                <input class="control-input" type="radio" name="type-of-housing" value="motels">
-                Мотель
+                <input class="visually-hidden control-input" type="radio" name="type-of-housing" value="motels">
+                <span class="control-mark"></span>
+                <span class="control-label">Мотель</span>
               </label>
             </li>
             <li class="catalog-filter-item">
               <label class="control">
-                <input class="control-input" type="radio" name="type-of-housing" value="appartments">
-                Апартаменты
+                <input class="visually-hidden control-input" type="radio" name="type-of-housing" value="appartments">
+                <span class="control-mark"></span>
+                <span class="control-label">Апартаменты</span>
               </label>
             </li>
           </ul>
@@ -113,13 +118,35 @@
         <div class="price-container">
         <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-        <!--Поле с ценой в скринкасте советовали не трогать, так как подробное объяснение для таких элементов будет позже-->
+          <div class="range-wrapper-inputs">
+            <label class="catalog-filter-label">
+              <input class="catalog-min" type="number" name="min-sum" value="0">
+              <span class="from-to">от</span>
+            </label>
+            <label class="catalog-filter-label">
+            <input class="catalog-max" type="number" name="max-sum" value="9000">
+            <span class="from-to">до</span>
+          </label>
+          </div>
+          <div class="range">
+            <div class="range-scale">
+              <div class="range-bar" style="left: 0px; width: 226px">
+                <button class="range-toggle toggle-min">
+                  <span class="visually-hidden">Изменить минимальную цену.</span>
+                </button>
+                <button class="range-toggle toggle-max">
+                  <span class="visually-hidden">Изменить максимальную цену.</span>
+                </button>
+              </div>
+            </div>
+          </fieldset>
+          <div class="button-price-container">
         <button class="button button-check" type="submit">Применить</button>
         <button class="button button-reset" type="reset">Сбросить</button>
       </fieldset>
     </div>
       </form>
-    <!---</div>--->
+    </div>
     </section>
     <section class="catalog-hotels">
      <h2 class="visually-hidden">Поиск гостиниц в Седоне</h2>
@@ -217,7 +244,7 @@
       </ul>
       <ol class="pagination">
         <li class="pagination-item">
-          <a class="pagination-link pagination-current" href="#">1</a>
+          <a class="pagination-link pagination-current">1</a>
         </li>
         <li class="pagination-item">
           <a class="pagination-link" href="#">2</a>
