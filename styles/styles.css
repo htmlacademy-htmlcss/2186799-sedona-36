@@ -484,7 +484,8 @@ width: 310px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -917,26 +918,6 @@ width: 310px;
 
 .modal-dates-field:disabled {
   opacity: 0.3;
-}
-
-.modal-dates-field::-webkit-input-placeholder {
-
-}
-
-.modal-dates-field::-moz-placeholder {
-
-}
-
-.modal-dates-field:-ms-input-placeholder {
-
-}
-
-.modal-dates-field::-ms-input-placeholder {
-
-}
-
-.modal-dates-field::placeholder {
-
 }
 
 .modal-error {
