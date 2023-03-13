@@ -919,26 +919,6 @@ width: 310px;
   opacity: 0.3;
 }
 
-.modal-dates-field::-webkit-input-placeholder {
-
-}
-
-.modal-dates-field::-moz-placeholder {
-
-}
-
-.modal-dates-field:-ms-input-placeholder {
-
-}
-
-.modal-dates-field::-ms-input-placeholder {
-
-}
-
-.modal-dates-field::placeholder {
-
-}
-
 .modal-error {
   margin: 0;
   color: #FF5757;
