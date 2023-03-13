@@ -319,6 +319,8 @@ width: 310px;
 .advantages-wrapper-city,
 .advantages-wrapper-bridge {
   padding: 101px 85px;
+  width: 400px;
+  min-height: 385px;
 }
 
 .advantages-list {
@@ -564,13 +566,6 @@ width: 310px;
   padding: 96px 258px 99px 258px;
 }
 
-.newsletter-container,
-.catalog-newsletter-container {
-  width: 684px;
-  margin: 0 auto;
-  padding: 96px 0px 104px;
-}
-
 .newsletter-title {
   font-weight: 700;
   font-size: 30px;
@@ -587,7 +582,7 @@ width: 310px;
   line-height: 26px;
   text-align: center;
   color: #FFFFFF;
-  margin-bottom: 54px;
+  margin-bottom: 50px;
 }
 
 .newsletter-form {
@@ -608,7 +603,7 @@ width: 310px;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
   width: 452px;
-  padding: 16px 20px;
+  padding: 15px 20px;
   border: none;
 }
 
@@ -1279,6 +1274,7 @@ width: 310px;
 
 .catalog-filter-group:disabled {
   opacity: 0.3;
+  pointer-events: none;
 }
 
 .catalog-filter-label {
@@ -1451,6 +1447,7 @@ width: 310px;
 .catalog-min:disabled,
 .catalog-max:disabled {
   opacity: 0.3;
+  pointer-events: none;
 }
 
 .catalog-min::-webkit-outer-spin-button,
@@ -1956,6 +1953,7 @@ width: 96px;
   background-color: #FFFFFF;
   color: #000000;
   text-align: center;
+  padding: 96px 258px 103px 258px;
 }
 
 .catalog-newsletter-title {
@@ -1975,5 +1973,5 @@ width: 96px;
   text-align: center;
   color: #333333;
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 53px;
 }
