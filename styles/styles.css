@@ -519,7 +519,7 @@ justify-content: flex-end;
   background-size: cover;
   text-align: center;
   min-height: 415px;
-  padding: 96px 258px 99px 258px;
+  padding: 95px 258px 99px 258px;
 }
 
 .newsletter-title {
@@ -538,7 +538,7 @@ justify-content: flex-end;
   line-height: 26px;
   text-align: center;
   color: #FFFFFF;
-  margin-bottom: 52px;
+  margin-bottom: 53px;
 }
 
 .newsletter-form {
@@ -619,7 +619,7 @@ justify-content: flex-end;
   min-height: 120px;
   margin: 0 auto;
   align-items: center;
-  padding: 40px 70px 30px;
+  padding: 45px 70px 30px;
   flex-wrap: wrap;
 }
 
@@ -1141,7 +1141,7 @@ justify-content: flex-end;
   background-size: 13px 15px;
   background-position: center;
   display: block;
-  margin-right: 10px;
+  margin-right: 8px;
   width: 15px;
   height: 15px;
 }
@@ -1203,6 +1203,7 @@ justify-content: flex-end;
   line-height: 24px;
   color: #FFFFFF;
   margin: 0;
+  padding: 0;
   margin-bottom: 32px;
   text-transform: capitalize;
 }
@@ -1225,7 +1226,7 @@ justify-content: flex-end;
 .control {
   position: relative;
   display: block;
-  padding-left: 40px;
+  padding-left: 36px;
   cursor: pointer;
 }
 
